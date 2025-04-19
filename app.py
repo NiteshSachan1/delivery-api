@@ -37,7 +37,7 @@ def compute_cost(path, center_weights):
 def home():
     return 'Delivery Cost Calculator API'
 
-@app.route('/calculate_cost', methods=['POST'])
+@app.route('/calculate_cost', methods=['GET','POST'])
 def calculate_cost():
     try:
         order = request.get_json()
